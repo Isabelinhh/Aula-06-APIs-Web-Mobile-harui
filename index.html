@@ -179,119 +179,139 @@
 
             <!-- MUDANÇA PARA GRID -->
             <!-- SUSHI E SASHIMI - separar por categoria -->
-           <div id="cat-sushis e sashimis" class="categoria-conteudo">
+            <div id="cat-sushis e sashimis" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Sushis e Sashimis</div>
                 <!-- Combinado Sushi -->
                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Combinado Sushi', 99.00, '1 Temaki Filadélfia, 10 Uramakis e 10 Sashimis','./assets/img/comb_sushi.webp', 's_1')">
+                    <div
+                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="absolute inset-0 z-0 cursor-pointer"
+                            onclick="abrirModalDetalhes('Combinado Sushi', 99.00, '1 Temaki Filadélfia, 10 Uramakis e 10 Sashimis','./assets/img/comb_sushi.webp', 's_1')">
 
                         </div>
                         <!-- Botão Favorito -->
                         <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
                         </button>
 
                         <!-- nome e preço -->
-                        <img src="./assets/img/comb_sushi.webp" alt="Combinado Sushi" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                        <img src="./assets/img/comb_sushi.webp" alt="Combinado Sushi"
+                            class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
                         <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
-                        <h4 class="font-bold text-sark text-sm leading-tight">Combinado Sushi</h4>
-                        <p class="text-primary font-black text-lg leading-none mt-1">R$99,00</p>
+                            <h4 class="font-bold text-sark text-sm leading-tight">Combinado Sushi</h4>
+                            <p class="text-primary font-black text-lg leading-none mt-1">R$99,00</p>
                         </div>
 
                         <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Combinado Sushi', 99.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
+                        <button onclick="adicionarItem('s_1', 'Combinado Sushi', 99.00)"
+                            class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                     </div>
                 </div>
+            </div>
 
-                <!-- Combinado Hot -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Combinado Hot', 99.90, '1 temaki Filadélfia Médio, 10 urumakis Filadélfia e 10 hot Filadélfia','./assets/img/comb_hot.webp', 's_1')">
+            <!-- Combinado Hot -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Combinado Hot', 99.90, '1 temaki Filadélfia Médio, 10 urumakis Filadélfia e 10 hot Filadélfia','./assets/img/comb_hot.webp', 's_2')">
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/comb_hot.webp" alt="Combinado Hot" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/comb_hot.webp" alt="Combinado Hot"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Combinado Hot</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$99,90</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Combinado Hot', 99.90)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                    
-                
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_2', 'Combinado Hot', 99.90)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
 
-                <!-- Comb sushi caro -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Combinado Sushi', 115.00, '10 Sashimis Variados, 10 urumakis Filadélfia e 10 uramakis','./assets/img/comb_sushi_caro', 's_1')">
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+            </div>
+            </div>
+
+            <!-- Comb sushi caro -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Combinado Sushi', 115.00, '10 Sashimis Variados, 10 urumakis Filadélfia e 10 uramakis','./assets/img/comb_sushi_caro', 's_3')">
+
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/comb_sushi_caro.webp" alt="Combinado Sushi" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/comb_sushi_caro.webp" alt="Combinado Sushi"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Combinado Sushi</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$115,00</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Combinado Sushi', 115.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                    
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_3', 'Combinado Sushi', 115.00)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
 
-                <!-- Comb Hot caro -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Combinado Hot', 120.00, ' 1 Temaki Filadélfia Médio, 10 urumakis Filadélfia e 10 hot Filadélfia','./assets/img/comb_hot_caro', 's_1')">
+            </div>
+            </div>
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+            <!-- Comb Hot caro -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Combinado Hot', 120.00, ' 1 Temaki Filadélfia Médio, 10 urumakis Filadélfia e 10 hot Filadélfia','./assets/img/comb_hot_caro', 's_4')">
+
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/comb_hot.webp" alt="Combinado Hot" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/comb_hot.webp" alt="Combinado Hot"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Combinado Hot</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$120,00</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Combinado Hot', 120.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                    
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_4', 'Combinado Hot', 120.00)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
+
+            </div>
+            </div>
 
             </div>
 
@@ -347,91 +367,106 @@
 
 
             <!-- BEBIDAS -->
-             <div id="cat-bebidas" class="categoria-conteudo">
+            <div id="cat-bebidas" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Bebidas</div>
                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Limonada', 20.00, ' Limonada - 300ml','./assets/img/limonada.webp', 's_1')">
+                    <div
+                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="absolute inset-0 z-0 cursor-pointer"
+                            onclick="abrirModalDetalhes('Limonada', 20.00, ' Limonada - 300ml','./assets/img/limonada.webp', 's_5')">
 
                         </div>
                         <!-- Botão Favorito -->
                         <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
                         </button>
 
                         <!-- nome e preço -->
-                        <img src="./assets/img/limonada.webp" alt="Limonada" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                        <img src="./assets/img/limonada.webp" alt="Limonada"
+                            class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
                         <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
-                        <h4 class="font-bold text-sark text-sm leading-tight">Limonada</h4>
-                        <p class="text-primary font-black text-lg leading-none mt-1">R$20,00</p>
+                            <h4 class="font-bold text-sark text-sm leading-tight">Limonada</h4>
+                            <p class="text-primary font-black text-lg leading-none mt-1">R$20,00</p>
                         </div>
 
                         <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Limonada', 20.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
+                        <button onclick="adicionarItem('s_5', 'Limonada', 20.00)"
+                            class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                     </div>
-                
-                    </div>
+
                 </div>
+            </div>
 
-                <!-- Suco Natural -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Suco Natural Laranja', 17.00, ' Suco de Laranja Natural - 300ml','./assets/img/suco.webp', 's_1')">
+            <!-- Suco Natural -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Suco Natural Laranja', 17.00, ' Suco de Laranja Natural - 300ml','./assets/img/suco.webp', 's_6')">
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/suco.webp" alt="Suco de Laranja" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/suco.webp" alt="Suco de Laranja"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Suco Natural Laranja</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$17,00</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Suco Natural Laranja', 17.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                    
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_6', 'Suco Natural Laranja', 17.00)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
 
-                <!-- Refrigerante -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Refrigerante', 8.00, ' Lata 350ml','./assets/img/refri.webp', 's_1')">
+            </div>
+            </div>
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+            <!-- Refrigerante -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Refrigerante', 8.00, ' Lata 350ml','./assets/img/refri.webp', 's_7')">
+
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/refri.webp" alt="Refrigerante" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/refri.webp" alt="Refrigerante"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Refrigerante</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$8,00</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Refrigerante', 8.00)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                   
-                    
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_7', 'Refrigerante', 8.00)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
+
+
+            </div>
+            </div>
 
             </div>
 
@@ -478,90 +513,105 @@
 
 
             <!-- SOBREMESAS -->
-             <div id="cat-sobremesas" class="categoria-conteudo">
+            <div id="cat-sobremesas" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Sobremesas</div>
                 <!-- sorvete -->
                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Taça de Sorvete', 19.90, ' Sorvete - 3 bolas (escolha os sabores)','./assets/img/sorvete.webp', 's_1')">
+                    <div
+                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="absolute inset-0 z-0 cursor-pointer"
+                            onclick="abrirModalDetalhes('Taça de Sorvete', 19.90, ' Sorvete - 3 bolas (escolha os sabores)','./assets/img/sorvete.webp', 's_8')">
 
                         </div>
                         <!-- Botão Favorito -->
                         <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
                         </button>
 
                         <!-- nome e preço -->
-                        <img src="./assets/img/sorvete.webp" alt="Taça de Sorvete" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                        <img src="./assets/img/sorvete.webp" alt="Taça de Sorvete"
+                            class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
                         <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
-                        <h4 class="font-bold text-sark text-sm leading-tight">Taça de Sorvete</h4>
-                        <p class="text-primary font-black text-lg leading-none mt-1">R$19,90</p>
+                            <h4 class="font-bold text-sark text-sm leading-tight">Taça de Sorvete</h4>
+                            <p class="text-primary font-black text-lg leading-none mt-1">R$19,90</p>
                         </div>
 
                         <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Taça de Sorvete', 19.90)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
+                        <button onclick="adicionarItem('s_8', 'Taça de Sorvete', 19.90)"
+                            class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                     </div>
-                    
-                    </div>
+
                 </div>
+            </div>
 
-                <!-- pudim -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Pudim', 17.90, 'Pudim de leite condensado','./assets/img/pudim.webp', 's_1')">
+            <!-- pudim -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Pudim', 17.90, 'Pudim de leite condensado','./assets/img/pudim.webp', 's_9')">
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/pudim.webp" alt="Pudim" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/pudim.webp" alt="Pudim"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Pudim</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$17,90</p>
-                        </div>
-
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Pudim', 17.90)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                     </div>
-                
+
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_9', 'Pudim', 17.90)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
 
-                <!-- mousse -->
-                 <div class="grid-cols-2 gap-4">
-                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
-                        <div class="absolute inset-0 z-0 cursor-pointer" onclick="abrirModalDetalhes('Mousse', 17.90, 'Escolha o sabor: Chocolate, Maracuja, Morango e Coco.','./assets/img/mousse.webp', 's_1')">
+            </div>
 
-                        </div>
-                        <!-- Botão Favorito -->
-                        <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+            <!-- mousse -->
+            <div class="grid-cols-2 gap-4">
+                <div
+                    class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="absolute inset-0 z-0 cursor-pointer"
+                        onclick="abrirModalDetalhes('Mousse', 17.90, 'Escolha o sabor: Chocolate, Maracuja, Morango e Coco.','./assets/img/mousse.webp', 's_10')">
+
+                    </div>
+                    <!-- Botão Favorito -->
+                    <button class="absolute top-3 right-3 text-gray-300 hover:text-primary transition-colors z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                        </button>
+                        </svg>
+                    </button>
 
-                        <!-- nome e preço -->
-                        <img src="./assets/img/mousse.webp" alt="Mousse" class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
-                        <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
+                    <!-- nome e preço -->
+                    <img src="./assets/img/mousse.webp" alt="Mousse"
+                        class="w-full h-24 object-contain mb-2 mt-2 transition-transform duration-300 drop-shadow-sm group-hover:scale-105 pointer-events-none relative z-10">
+                    <div class="text-left w-full mt-auto relative z-10 pointer-events-none">
                         <h4 class="font-bold text-sark text-sm leading-tight">Mousse</h4>
                         <p class="text-primary font-black text-lg leading-none mt-1">R$17,90</p>
-                        </div>
+                    </div>
 
-                        <!-- botão adicionar -->
-                         <button onclick="adicionarItem('s_1', 'Mousse', 17.90)" class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
-                    </div>
-                    
-                    </div>
+                    <!-- botão adicionar -->
+                    <button onclick="adicionarItem('s_10', 'Mousse', 17.90)"
+                        class="w-full bg-primary text-white py-2 rounded-xl text-xs font-bold mt-3 shadow-md hover:bg-red-800 active:scale-95 transition-all z-10 relative">Adicionar</button>
                 </div>
+
+            </div>
+            </div>
 
             </div>
 
@@ -622,91 +672,94 @@
         </aside>
 
         <!-- MODAL DE DETALHES DO PRODUTO -->
-    <div id="detalhes-modal"
-        class="fixed inset-0 bg-black/70 z-[80] flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 px-4">
-        <div class="bg-white w-full max-w-[400px] rounded-[30px] overflow-hidden transform scale-95 transition-transform duration-300 relative flex flex-col"
-            id="detalhes-modal-content">
+        <div id="detalhes-modal"
+            class="fixed inset-0 bg-black/70 z-[80] flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 px-4">
+            <div class="bg-white w-full max-w-[400px] rounded-[30px] overflow-hidden transform scale-95 transition-transform duration-300 relative flex flex-col"
+                id="detalhes-modal-content">
 
-            <!-- Botão Fechar -->
-            <button onclick="fecharModalDetalhes()"
-                class="absolute top-4 right-4 bg-white/80 backdrop-blur-md text-dark w-10 h-10 rounded-full flex justify-center items-center font-bold text-2xl shadow-sm z-10 hover:text-primary active:scale-90 transition-all">&times;</button>
+                <!-- Botão Fechar -->
+                <button onclick="fecharModalDetalhes()"
+                    class="absolute top-4 right-4 bg-white/80 backdrop-blur-md text-dark w-10 h-10 rounded-full flex justify-center items-center font-bold text-2xl shadow-sm z-10 hover:text-primary active:scale-90 transition-all">&times;</button>
 
-            <!-- Imagem -->
-            <div class="w-full h-[280px] bg-gray-50 flex justify-center items-center p-8 relative">
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-100 to-white opacity-50"></div>
-                <img id="detalhes-img" src="" alt="Produto"
-                    class="w-full h-full object-contain drop-shadow-xl relative z-10 transition-transform duration-500 hover:scale-105">
-            </div>
-
-            <!-- Infos -->
-            <div class="p-6">
-                <h2 id="detalhes-nome" class="text-3xl font-black text-dark mb-1 leading-tight tracking-tight">Nome do
-                    Produto</h2>
-                <p id="detalhes-preco" class="text-2xl font-black text-primary mb-4 drop-shadow-sm">R$ 0,00</p>
-                <div class="bg-gray-50 rounded-xl p-4 mb-6">
-                    <p id="detalhes-desc" class="text-gray-600 text-sm leading-relaxed font-medium">Descrição detalhada
-                        do produto vai aqui...</p>
+                <!-- Imagem -->
+                <div class="w-full h-[280px] bg-gray-50 flex justify-center items-center p-8 relative">
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-100 to-white opacity-50"></div>
+                    <img id="detalhes-img" src="" alt="Produto"
+                        class="w-full h-full object-contain drop-shadow-xl relative z-10 transition-transform duration-500 hover:scale-105">
                 </div>
 
-                <button id="detalhes-btn-add"
-                    class="w-full bg-gradient-to-r from-primary to-[#a82d2f] text-white py-4 rounded-xl text-[17px] font-extrabold shadow-[0_8px_20px_-6px_rgba(202,60,63,0.5)] hover:shadow-[0_8px_25px_-4px_rgba(202,60,63,0.6)] active:scale-[0.98] transition-all outline-none flex justify-center items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                        stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                    Adicionar ao Pedido
-                </button>
-            </div>
-        </div>
-    </div>
+                <!-- Infos -->
+                <div class="p-6">
+                    <h2 id="detalhes-nome" class="text-3xl font-black text-dark mb-1 leading-tight tracking-tight">Nome
+                        do
+                        Produto</h2>
+                    <p id="detalhes-preco" class="text-2xl font-black text-primary mb-4 drop-shadow-sm">R$ 0,00</p>
+                    <div class="bg-gray-50 rounded-xl p-4 mb-6">
+                        <p id="detalhes-desc" class="text-gray-600 text-sm leading-relaxed font-medium">Descrição
+                            detalhada
+                            do produto vai aqui...</p>
+                    </div>
 
-    <!-- RODAPÉ CARRINHO FIXO (Abre Modal) -->
-    <div id="carrinho-footer"
-        class="fixed bottom-0 left-0 w-full bg-primary text-white p-4 z-50 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] transform translate-y-full transition-transform duration-300 flex justify-between items-center cursor-pointer"
-        onclick="abrirModalCarrinho()">
-        <div>
-            <p class="text-sm font-medium">Resumo do Pedido</p>
-            <p class="text-xl font-bold">Total: <span id="carrinho-total">R$ 0,00</span></p>
-        </div>
-        <button class="bg-white text-primary px-4 py-2 rounded-lg font-bold shadow-md active:scale-95 transition-all">
-            Ver Carrinho
-        </button>
-    </div>
-
-    <!-- MODAL DO CARRINHO (Detalhes) -->
-    <div id="carrinho-modal"
-        class="fixed inset-0 bg-black/60 z-[60] flex flex-col justify-end sm:justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300">
-
-        <!-- Conteúdo do Modal -->
-        <div class="bg-white w-full sm:w-[500px] h-[85vh] sm:h-auto sm:max-h-[85vh] rounded-t-3xl sm:rounded-2xl flex flex-col transform translate-y-full sm:translate-y-0 sm:scale-95 transition-transform duration-300"
-            id="carrinho-modal-content">
-
-            <!-- Cabelho Modal -->
-            <div class="p-5 border-b flex justify-between items-center">
-                <h2 class="text-2xl font-bold text-dark">Seu Carrinho</h2>
-                <button onclick="fecharModalCarrinho()"
-                    class="text-3xl font-bold text-muted hover:text-dark focus:outline-none">&times;</button>
-            </div>
-
-            <!-- Corpo Modal (Itens) -->
-            <div id="carrinho-itens-container" class="p-5 flex-1 overflow-y-auto flex flex-col gap-4">
-                <!-- Itens serão injetados aqui via JS -->
-            </div>
-
-            <!-- Rodapé Modal (Checkout) -->
-            <div class="p-5 border-t bg-gray-50 rounded-b-3xl sm:rounded-b-2xl">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-bold">Total do Pedido:</span>
-                    <span id="modal-carrinho-total" class="text-2xl font-black text-primary">R$ 0,00</span>
+                    <button id="detalhes-btn-add"
+                        class="w-full bg-gradient-to-r from-primary to-[#a82d2f] text-white py-4 rounded-xl text-[17px] font-extrabold shadow-[0_8px_20px_-6px_rgba(202,60,63,0.5)] hover:shadow-[0_8px_25px_-4px_rgba(202,60,63,0.6)] active:scale-[0.98] transition-all outline-none flex justify-center items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        Adicionar ao Pedido
+                    </button>
                 </div>
-                <button onclick="fecharPedido()" id="btn-fechar-pedido"
-                    class="w-full bg-primary text-white py-3 rounded-xl text-lg font-bold shadow-lg hover:bg-red-700 active:scale-95 transition-all">
-                    Fechar Pedido (Usar GPS)
-                </button>
             </div>
         </div>
 
-    </div>
+        <!-- RODAPÉ CARRINHO FIXO (Abre Modal) -->
+        <div id="carrinho-footer"
+            class="fixed bottom-0 left-0 w-full bg-primary text-white p-4 z-50 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] transform translate-y-full transition-transform duration-300 flex justify-between items-center cursor-pointer"
+            onclick="abrirModalCarrinho()">
+            <div>
+                <p class="text-sm font-medium">Resumo do Pedido</p>
+                <p class="text-xl font-bold">Total: <span id="carrinho-total">R$ 0,00</span></p>
+            </div>
+            <button
+                class="bg-white text-primary px-4 py-2 rounded-lg font-bold shadow-md active:scale-95 transition-all">
+                Ver Carrinho
+            </button>
+        </div>
+
+        <!-- MODAL DO CARRINHO (Detalhes) -->
+        <div id="carrinho-modal"
+            class="fixed inset-0 bg-black/60 z-[60] flex flex-col justify-end sm:justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300">
+
+            <!-- Conteúdo do Modal -->
+            <div class="bg-white w-full sm:w-[500px] h-[85vh] sm:h-auto sm:max-h-[85vh] rounded-t-3xl sm:rounded-2xl flex flex-col transform translate-y-full sm:translate-y-0 sm:scale-95 transition-transform duration-300"
+                id="carrinho-modal-content">
+
+                <!-- Cabelho Modal -->
+                <div class="p-5 border-b flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-dark">Seu Carrinho</h2>
+                    <button onclick="fecharModalCarrinho()"
+                        class="text-3xl font-bold text-muted hover:text-dark focus:outline-none">&times;</button>
+                </div>
+
+                <!-- Corpo Modal (Itens) -->
+                <div id="carrinho-itens-container" class="p-5 flex-1 overflow-y-auto flex flex-col gap-4">
+                    <!-- Itens serão injetados aqui via JS -->
+                </div>
+
+                <!-- Rodapé Modal (Checkout) -->
+                <div class="p-5 border-t bg-gray-50 rounded-b-3xl sm:rounded-b-2xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-lg font-bold">Total do Pedido:</span>
+                        <span id="modal-carrinho-total" class="text-2xl font-black text-primary">R$ 0,00</span>
+                    </div>
+                    <button onclick="fecharPedido()" id="btn-fechar-pedido"
+                        class="w-full bg-primary text-white py-3 rounded-xl text-lg font-bold shadow-lg hover:bg-red-700 active:scale-95 transition-all">
+                        Fechar Pedido (Usar GPS)
+                    </button>
+                </div>
+            </div>
+
+        </div>
 
         <!-- script para botão categoria -->
         <!-- separar cada categoria -->
@@ -745,8 +798,7 @@
             //     });
             // });
 
-            //adiciona scroll suave para links internos
-            let startX = 0;
+          let startX = 0;
             let startY = 0;
 
             //evento de cada botão
@@ -782,6 +834,224 @@
                     mudarCategoria(btn.dataset.cat);
                 });
             });
+
+            //logica do carrinho, loclstorage e apis
+            //modal detalhes do produto
+
+            const modalDetalhes = document.getElementById('detalhes-modal');
+            const modalDetalhesContent = document.getElementById('detalhes-modal-content');
+
+            //abre o modal com informações do produto clicado
+            function abrirModalDetalhes(nome, preco, desc, img, id) {
+                if (navigator.vibrate) navigator.vibrate(40);
+
+                document.getElementById('detalhes-nome').innerText = nome;
+                document.getElementById('detalhes-preco').innerText = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                document.getElementById('detalhes-desc').innerText = desc;
+                document.getElementById('detalhes-img').src = img;
+                document.getElementById('detalhes-btn-add').onclick = function () {
+                    adicionarItem(id, nome, preco);
+                    fecharModalDetalhes();
+                }
+                modalDetalhes.classList.remove('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    modalDetalhesContent.classList.remove('scale-95');
+                    modalDetalhesContent.classList.add('scale-100');
+                }, 10);
+            }
+
+            //fechar o modal detalhes do produto
+            function fecharModalDetalhes() {
+                modalDetalhesContent.classList.remove('scale-100');
+                modalDetalhesContent.classList.add('scale-95');
+                setTimeout(() => {
+                    modalDetalhes.classList.add('opacity-0', 'pointer-events-none');
+                }, 300);
+            }
+
+          //carrinho
+        //array para armazenar itens do carrinho
+        let carrinho = [];
+        //elementos do DOM
+        const carrinhoFooter = document.getElementById('carrinho-footer');
+        const carrinhoTotalSpan = document.getElementById ('carrinho-total');
+        //elementos do modal
+        const modal= document.getElementById('carrinho-modal');
+        const modalContent = document.getElementById('carrinho-modal-content');
+        const itensContainer = document.getElementById('carrinho-itens-container');
+        const modalTotalSpan = document.getElementById('modal-carrinho-total');
+        //verifica se o carrinho já tem itens salvos no localstorage
+        function inicializarCarrinho(){
+            const carrinhoSalvo = localStorage.getItem('haruy_carrinho');
+            if (carrinhoSalvo){
+                //se existe algo salvo converte de volta para array e atualiza o carrinho
+                carrinho = JSON.parse(carrinhoSalvo);
+                atualizarInterfaceCart();
+
+            }
+        }
+
+        //adicionar ao carrinho
+        function adicionarItem(id,nome,preco){
+            if (navigator.vibrate){
+                navigator.vibrate(200);
+            }
+            const index = carrinho.findIndex(item => item.id === id);
+
+            if (index !== -1){
+                carrinho[index].quantidade += 1;
+            }else{
+                carrinho.push({
+                    id: id,
+                    nome: nome,
+                    preco: preco,
+                    quantidade: 1
+                });
+            }
+            atualizarCarrinho();
+        }
+
+        //função modal abrir e fechar do carrinho
+        function abrirModalCarrinho (){
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                modalContent.classList.remove('translate-y-full', 'scale-95');
+            }, 10);
+        }
+        function fecharModalCarrinho(){
+            modalContent.classList.add('translate-y-full', 'scale-95');
+            setTimeout(() => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+            }, 300);
+        }
+
+        //controles dentro do modal do carrinho (aumentar, diminuir,remover itens)
+        //controle de (+ / -) quantidade
+        function aumentarQuantidade(id){
+            const index = carrinho.findIndex(item => item.id === id);
+            if (index !== -1){
+                carrinho[index].quantidade += 1;
+                atualizarCarrinho();
+                //efeito de vibração para feedback tátil
+                if (navigator.vibrate) navigator.vibrate(50);
+            }
+        }
+        
+        function diminuirQuantidade(id){
+           const index = carrinho.findIndex(item => item.id === id);
+           if (index !== -1){
+            if (carrinho[index].quantidade>1){
+                carrinho [index].quantidade -= 1;
+            }else{
+                carrinho.splice(index, 1);
+                if (carrinho.length === 0){
+                    fecharModalCarrinho();
+                }
+            }
+            atualizarCarrinho();
+            if (navigator.vibrate) navigator.vibrate(50);
+           }
+        }
+
+        //persistencia do carrinho no localstorage e atualização da interface
+        function atualizarCarrinho() {
+            localStorage.setItem('haruy_carrinho', JSON.stringify(carrinho));
+            atualizarInterfaceCart();
+        }
+        function atualizarInterfaceCart(){
+            if(carrinho.length === 0){
+                carrinhoFooter.classList.add('translate-y-full');
+                return;
+            }
+            const total = carrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
+            const totalFormatado = total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+            //Formata para a moeda Brasileira R$
+            carrinhoTotalSpan.innerText = totalFormatado;
+            modalTotalSpan.innerText = totalFormatado;
+            // Exibe a barra do carrinho (traz de volta pra tela)
+            carrinhoFooter.classList.remove('translate-y-full');
+            //Renderiza a lista de itens dentro do Modal
+            renderizarItensModal();
+        }
+
+       //função para renderizar os itens do carrinho dentro do modal
+        function renderizarItensModal(){
+            if (!itensContainer) return;
+            itensContainer.innerHTML = '';
+            // para cada item no array, cria um HTML
+            carrinho.forEach(item => {
+                const subTotal = (item.preco * item.quantidade).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+                const precoUnit = item.preco.toLocaleString
+                ('pt-BR', {style: 'currency', currency: 'BRL'});
+                const divItem=document.createElement('div');
+                divItem.className = "flex justify-between items-center border-b pb-4 mt-2";
+
+                divItem.innerHTML = `
+                <div class="flex-1">
+                    <h4 class="font-bold text-lg text-dark">${item.nome}</h4>
+                    <p class="text-sm text-muted">${precoUnit}</p>
+                    <p class="text-bold text-primary mt-1">${subTotal}</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 bg-gray-100 p-2 rounded-xl">
+                        <button onclick="diminuirQuantidade('${item.id}')"
+                        class="w-8 h-8 flex justify-center items-center bg-white rounded-lg
+                        font-bold text-xl shadow-sm hover:text-primary
+                        active: scale-95 transition-all">-</button>
+                        <span class="font-bold text-lg w-4 text-center">${item.quantidade}</span>
+                        <button onclick="aumentarQuantidade('${item.id}')" class="w-8 h-8
+                        flex justify-center items-center bg-white rounded-lg font-bold
+                        text-xl shadow-sm hover:text-primary active:scale-95
+                        transition-all">+</button>
+                `;
+                itensContainer.appendChild(divItem);
+            })
+        }
+
+        //fechar pedido (Geolocalização API - GPS)
+        function fecharPedido(){
+            if (carrinho.length === 0){
+                const btnPedido = document.getElementById('btn-fechar-pedido');
+                if (!btnPedido) return;
+
+                const btnOriginalText = btnPedido.innerText;
+                btnPedido.innerText = "Buscando localização...";
+
+                navigator.geolocation.getCurrentPosition(
+                    //callback de sucesso
+                    (posicao) => {
+                        const lat = posicao.coords.latitude;
+                        const ing = posicao.coords.longitude;
+
+                        btnPedido.innerText = btnOriginalText;
+
+                        alert(`Pedido Fechado com Sucesso! 
+                        \nSua Localização: ${lat.toFixed(4)}, ${lmg.toFixed(4)}
+                        \nOs dados do carrinho serão limpos`);
+
+                        carrinho = [];
+                        fecharModalCarrinho();
+                        atualizarCarrinho();
+                    },
+                    //callback de erro
+                    (erro) => {
+                        btnPedido.innerText = btnOriginalText;
+                        console.error(erro);
+                        alert("Não foi possível obter sua localização.");
+                        carrinho = [];
+                        fecharModalCarrinho();
+                        atualizarCarrinho();
+                    }
+                );
+            }else {
+                alert(`Pedido Fechado com Sucesso!\n(navegador sem suporte GPS)`);
+                carrinho = [];
+                fecharModalCarrinho();
+                atualizarCarrinho();
+            }
+        }
+        inicializarCarrinho();
+            
         </script>
 
     </body>
