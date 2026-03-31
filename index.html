@@ -192,22 +192,22 @@
             const API_URL = 'https://aula-7-backend-vercel.vercel.app/api';
             const navCategorias = document.getElementById('nav-categorias');
             const listaProdutos = document.getElementById('lista-produtos');
-            const categoriaTitulo =document.getElementById('categoria-titulo');
+            const categoriaTitulo = document.getElementById('categoria-titulo');
             let categoriasData = [];
-            let categiriaAtivaId = null;
+            let categoriaAtivaId = null;
 
             async function carregarCategorias() {
                 try{
-                    const response = await fetch(`{$API_URL}/categorias`)
+                    const response = await fetch(`${API_URL}/categorias`)
                     categoriasData = await response.json();
                     renderizarBotoesCategorias();
                     //sleciona a 1° categoria automatico
                     if(categoriasData.length > 0) {
-                        selecionarCategorias(categoriasData[0].id,categoriasData[0].nome);
+                        selecionarCategoria(categoriasData[0].id, categoriasData[0].nome);
                     }
                 }catch (error) {
                     console.error('Erro ao carregar categorias:', error);
-                    navCategorias.innerHTML = '<p class="text-red-500"> Erro ao carregar menu.</p>';
+                    navCategorias.innerHTML = '<p class="text-red-500">Erro ao carregar menu.</p>';
                 }
             }
 
@@ -216,13 +216,12 @@
                 navCategorias.innerHTML = '';
                 categoriasData.forEach(cat => {
                     const btn = document.createElement('button');
-                        btn.classname = `snap-start px-4 py-4 py-1 rounded-full font-bold 
-                        text-sm transition-all duration-150 cursor-pointer flex-shrink-0 
-                        btn-cat`;
+                        btn.className = `snap-start px-4 py-4 py-1 rounded-full font-bold 
+                        text-sm transition-all duration-150 cursor-pointer flex-shrink-0 btn-cat`;
                         btn.innertext = cat.nome;
-                        btn.onclik = () => selecionarCategorias(cat.id, cat.nome);
+                        btn.onclik = () => selecionarCategoria(cat.id, cat.nome);
                         btn.dataset.id = cat.id;
-                        navCategorias.id = cat.id;    
+                        navCategorias.appendChild(btn);
                 });
             }
 
@@ -234,7 +233,7 @@
                 botoes.forEach(btn => {
                     if (parseInt(btn.dataset.id) === id) {
                         btn.classList.add('bg-primary', 'text-white');
-                        btn.classList.remoe('bg-[#ebebeb]', 'text-dark');
+                        btn.classList.remove('bg-[#ebebeb]', 'text-dark');
                     }else {
                         btn.classList.remove('bg-primary', 'text-white');
                         btn.classList.add('bg-[#ebebeb]', 'text-dark');
@@ -243,6 +242,23 @@
                 carregarProdutos(id);
                 
             }
+
+            async function carregarProdutos(categoriaId) {
+               listaProdutos.innerHTML = `
+               <div class="col-span-2 py-10 flex justify-center">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div> 
+                </div>
+               `;
+                try{
+                    const response = await fetch(`${API_URL}/produtos?categoriaId=${categoriaId}`);
+                    const produtos = await response.json();
+                    renderizarProdutos(produtos);
+                }catch (error) {
+                    console.error('Erro ao carregar produtos:', error);
+                    listaProdutos.innerHTML = '<p class="col-span-2 text-red-500">Erro ao carregar produtos.</p>';
+                }
+            }
+            
             carregarCategorias();
         </script>
 
